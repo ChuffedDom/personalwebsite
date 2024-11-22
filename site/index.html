@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to ChuffedDom, a personal page showcasing Dom's projects and interests.">
     <title>ChuffedDom</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <style>
         body {
+            max-width: 800;
+            padding: 16px;
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0;
@@ -19,10 +22,32 @@
             font-size: 3rem;
             color: #2c3e50;
         }
+        h2 {
+            margin-top: 30px;
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+        .container {
+            
+            width: calc(100% - 32px);
+            max-width: 800px;
+            margin: 0 auto; /* center the container*/
+        }
+        .container img {
+            width: 100%;
+            height: auto; /* maintain the aspect ratio */
+            display: block;
+            border-radius: 32px;
+        }
     </style>
 </head>
 <body>
-    <h1>Hi, I'm Dom</h1>
-    <h2>Welcome to my page</h2>
-</body>
+    <div class="container">
+        <h1>Hi, I'm Dom</h1>
+        <h2>Welcome to my page</h2>
+        <br>
+        <br>
+        <img src="assets/me.JPG" alt="Dom and Leo the dog in a vinyl store in Austin Texas">    
+    </div>
+   </body>
 </html>
